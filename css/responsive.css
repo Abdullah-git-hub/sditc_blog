@@ -1,0 +1,36 @@
+@media (max-width: 1400px){
+    .w-sd{
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px){
+    .aside_follow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .logo_menu .menu {
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+    }
+}
+@media (max-width: 768px){
+    .lev_3_side_img{
+        width: 97%;
+    }
+}
+
+@media (max-width: 510px){
+    .lev_2_con .card{
+        max-width: none;
+    }
+}
+@media (max-width: 450px){
+    .aside_follow_box {
+        width: 47%;
+    }
+}
