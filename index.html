@@ -7,23 +7,24 @@
     <meta property="og:url" content="https://abdullah-git-hub.github.io/sditc_blog/index.html" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="SDITC Blog" />
-<!--     <meta property="og:description" content="How much does culture influence creative thinking?" /> -->
-    <meta property="og:image" content="https://scontent.fdac135-1.fna.fbcdn.net/v/t1.15752-9/316444641_1078700209489329_3353886703104331429_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=ae9488&_nc_ohc=XIqufnXKeIkAX9WQwgx&tn=FbwLnUB_7MRUsSa4&_nc_ht=scontent.fdac135-1.fna&oh=03_AdRFU3FWihCaoiFpQVWBvmzDtAzv-fmXNdqEaTZyVPQaUg&oe=63D53D9F" />
+    <meta property="og:image" content="https://scontent.fdac135-1.fna.fbcdn.net/v/t1.18169-9/22491949_242774342916956_1312290134965035823_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=gi1B-e0k3IAAX9kd4Jq&_nc_ht=scontent.fdac135-1.fna&oh=00_AfDZ9gR94QLy9A_klTHFntNCJZNffld0QfPistClz1lBGg&oe=63F3A77E"/>
     <title>Blog-SDITC</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/383d6dcfa8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/main.js" defer></script>
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/test-fire-f4df5.appspot.com/o/fav.png?alt=media&token=808dc13d-3728-4605-bd55-ba44b32751a1" type="image/x-icon">
 </head>
 <body>
 
 <!-- HEADER START -->
     <header>
-        <nav class="container row m-auto">
+        <nav class="container-fluid container-lg row w-100 m-0 mx-auto py-2">
             <div class="logo_menu col-10 row">
                 <div class="logo col-3 text-center">
+                    <i class="fa-solid fa-bars me-3"></i>
                     <img src="https://firebasestorage.googleapis.com/v0/b/test-fire-f4df5.appspot.com/o/fav-logo.png?alt=media&token=3670c8d7-6e40-4e8e-9d5d-e617d3e6f17e" alt="">
                 </div>
                 <div class="menu col-9 text-start">
@@ -61,7 +62,7 @@
                 </div>
                 <div class="nav_search">
                     <div class="search_box">
-                        <input class="shadow-sm rounded" type="text" placeholder="Type here" name="blog_search" id="blog_search">
+                        <input class="shadow-sm rounded" type="text" name="blog_search" id="blog_search">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <i class="fa-solid fa-xmark"></i>
                     </div>
@@ -71,6 +72,48 @@
     </header>
 <!-- HEADER END -->
 
+<!-- SIDE BAR START -->
+
+    <section class="side_bar">
+        <div class="side_bar_back"></div>
+        <div class="side_bar_con">
+            <div class="side_bar_top">
+                <div class="side_bar_search">
+                    <input type="text" name="" id="" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <button class="side_bar_close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="side_bar_menu mt-4">
+                <ul class="side_bar_ul_main ps-1">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Somthing</a></li>
+                    <li class="side_sub_menu">
+                        <a href="#">Is Here <i class="fa-solid fa-angle-down"></i></a>
+                    </li>
+                    <ul class="side_sub_menu_ul">
+                        <li><a href="#">And Here</a></li>
+                        <li class="side_sub_sub">
+                            <a href="#">Also Here <i class="fa-solid fa-angle-down"></i></a>
+                        </li>
+                            <ul class="side_sub_sub_ul">
+                                <li><a href="#">Link</a></li>
+                                <li><a href="#">Link</a></li>
+                                 <li><a href="#">Link</a></li>
+                            </ul>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                    <li><a href="#">Home Sweet</a></li>
+                    <li><a href="#">Back To Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<!-- SIDE BAR END -->
 
 <!-- CAROUSEL START -->
     <!-- <section class="container">
@@ -82,10 +125,10 @@
 
 
 <!-- TOP SLIDER START -->
-    <section class="top_slider container">
-        <div class="slider_con row m-auto my-4 p-2 py-4 rounded-2 w-sd">
-            <div class="slider_laber col-1">Trending:</div>
-            <div class="slider_blog_list col-10">
+    <section class="top_slider container-fluid container-lg">
+        <div class="slider_con row m-auto my-4 p-2 py-3 rounded-2 w-sd">
+            <div class="slider_laber col-lg-1">Trending:</div>
+            <div class="slider_blog_list col-11 col-lg-10">
                 <div class="blog_name">
                     <a href="./demo.html">Blog name here</a>
                 </div>
@@ -100,38 +143,44 @@
 
 
 <!-- TRENDING BLOG THUMB VIEW START -->
-    <section class="trending_blog_sec container">
+    <section class="trending_blog_sec container-fluid container-lg">
         <div class="trending_blog_con m-auto w-sd row">
-            <div class="col-4 p-0 pe-2">
+            <div class="col-lg-4 mt-3 mt-lg-0 pe-lg-2">
                 <div class="trending_blog rounded-3">
                     <div class="trend_tag mb-2">
                         <a href="./demo.html">Tag Name</a>
                     </div>
                     <div class="trend_blog_descrip">
-                        <h5 class="m-0 my-2">Blog Name Here</h5>
-                        <p class="m-0">Short Description here</p>
+                        <a href="#">
+                            <h5 class="m-0 my-2">Blog Name Here</h5>
+                            <p class="m-0">Short Description here</p>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-4 p-0 px-2">
+            <div class="col-lg-4 mt-3 mt-lg-0 px-lg-2">
                 <div class="trending_blog rounded-3">
                     <div class="trend_tag mb-2">
                         <a href="./demo.html">Tag Name</a>
                     </div>
                     <div class="trend_blog_descrip">
-                        <h5 class="m-0 my-2">Blog Name Here</h5>
-                        <p class="m-0">Short Description here</p>
+                        <a href="#">
+                            <h5 class="m-0 my-2">Blog Name Here</h5>
+                            <p class="m-0">Short Description here</p>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-4 p-0 ps-2">
+            <div class="col-lg-4 mt-3 mt-lg-0 ps-lg-2">
                 <div class="trending_blog rounded-3">
                     <div class="trend_tag mb-2">
                         <a href="./demo.html">Tag Name</a>
                     </div>
                     <div class="trend_blog_descrip">
-                        <h5 class="m-0 my-2">Blog Name Here</h5>
-                        <p class="m-0">Short Description here</p>
+                        <a href="#">
+                            <h5 class="m-0 my-2">Blog Name Here</h5>
+                            <p class="m-0">Short Description here</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -141,11 +190,11 @@
 
 
 <!-- BLOG MAIN BODY START -->
-    <section class="container">
-        <div class="main_body_con w-sd m-auto my-4">
-            <main class="">
+    <section class="container-fluid container-lg">
+        <div class="main_body_con w-sd m-auto my-4 row">
+            <main class="col-12 col-lg-8">
                 <div class="block_lev_1">
-
+                    
                     <div class="block_head my-3">
                         <div class="block_title">
                             <b>Title <i class="fa-solid fa-angles-right"></i></b>
@@ -156,23 +205,23 @@
                     </div>
 
                     <div class="lev_1_con row">
-                        <div class="col-5">
+                        <div class="col-md-5">
                             <div class="card">
-                                <a href="./demo.html"><img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."></a>
+                                <a class="card_img_con" href="./demo.html"><img src="https://images.unsplash.com/photo-1543083115-638c32cd3d58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."></a>
                                 <div class="card-body">
                                     <h5><a href="./demo.html">Lorem ipsum dolor sit amet consectetur adipisicing.</a></h5>
                                     <p class="text-muted m-0">by <span><a href="./demo.html" class="clr_blue">You Know Who</a></span> • Feb 31, 2022</p>
                                 </div>
                               </div>
                         </div>
-                        <div class="col-7 lev_1_side">
+                        <div class="col-md-7 lev_1_side">
 
-                            <div class="card" style="max-width: 540px;">
+                            <div class="card mt-3 mt-md-0" style="">
                                 <div class="row g-0">
-                                  <div class="col-md-4 lev_1_side_img">
-                                    <img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="img-fluid rounded-start" alt="...">
+                                  <div class="col-3 col-md-4 lev_1_side_img">
+                                    <img src="https://images.unsplash.com/photo-1543083115-638c32cd3d58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="img-fluid rounded-start" alt="...">
                                   </div>
-                                  <div class="col-md-8">
+                                  <div class="col-8">
                                     <div class="card-body">
                                       <a href=""><h6 class="card-title">Blog Name Here...</h6></a>
                                       <!-- <p class="card-text">short des</p> -->
@@ -181,12 +230,12 @@
                                   </div>
                                 </div>
                               </div>
-                            <div class="card" style="max-width: 540px;">
+                            <div class="card mt-3 mt-md-0" style="">
                                 <div class="row g-0">
-                                  <div class="col-md-4 lev_1_side_img">
-                                    <img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="img-fluid rounded-start" alt="...">
+                                  <div class="col-3 col-md-4 lev_1_side_img">
+                                    <img src="https://images.unsplash.com/photo-1543083115-638c32cd3d58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="img-fluid rounded-start" alt="...">
                                   </div>
-                                  <div class="col-md-8">
+                                  <div class="col-8">
                                     <div class="card-body">
                                       <a href=""><h6 class="card-title">Blog Name Here...</h6></a>
                                       <!-- <p class="card-text">short des</p> -->
@@ -195,12 +244,12 @@
                                   </div>
                                 </div>
                               </div>
-                            <div class="card" style="max-width: 540px;">
+                            <div class="card mt-3 mt-md-0" style="">
                                 <div class="row g-0">
-                                  <div class="col-md-4 lev_1_side_img">
-                                    <img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="img-fluid rounded-start" alt="...">
+                                  <div class="col-3 col-md-4 lev_1_side_img">
+                                    <img src="https://images.unsplash.com/photo-1543083115-638c32cd3d58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="img-fluid rounded-start" alt="...">
                                   </div>
-                                  <div class="col-md-8">
+                                  <div class="col-8">
                                     <div class="card-body">
                                       <a href=""><h6 class="card-title">Blog Name Here...</h6></a>
                                       <!-- <p class="card-text">short des</p> -->
@@ -228,42 +277,42 @@
 
                     <div class="lev_2_con">
                         <div class="card">
-                            <a href="./demo.html"><img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."></a>
+                            <a class="card_img_con" href="./demo.html"><img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."></a>
                             <div class="card-body">
                                 <h5><a href="./demo.html">Lorem ipsum dolor sit amet consectetur adipisicing.</a></h5>
                                 <p class="text-muted m-0">by <span><a href="./demo.html" class="clr_blue">You Know Who</a></span> • Feb 31, 2022</p>
                             </div>
                         </div>
                         <div class="card">
-                            <a href="./demo.html"><img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."></a>
+                            <a class="card_img_con" href="./demo.html"><img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."></a>
                             <div class="card-body">
                                 <h5><a href="./demo.html">Lorem ipsum dolor sit amet consectetur adipisicing.</a></h5>
                                 <p class="text-muted m-0">by <span><a href="./demo.html" class="clr_blue">You Know Who</a></span> • Feb 31, 2022</p>
                             </div>
                         </div>
                         <div class="card">
-                            <a href="./demo.html"><img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."></a>
+                            <a class="card_img_con" href="./demo.html"><img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."></a>
                             <div class="card-body">
                                 <h5><a href="./demo.html">Lorem ipsum dolor sit amet consectetur adipisicing.</a></h5>
                                 <p class="text-muted m-0">by <span><a href="./demo.html" class="clr_blue">You Know Who</a></span> • Feb 31, 2022</p>
                             </div>
                         </div>
                         <div class="card">
-                            <a href="./demo.html"><img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."></a>
+                            <a class="card_img_con" href="./demo.html"><img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."></a>
                             <div class="card-body">
                                 <h5><a href="./demo.html">Lorem ipsum dolor sit amet consectetur adipisicing.</a></h5>
                                 <p class="text-muted m-0">by <span><a href="./demo.html" class="clr_blue">You Know Who</a></span> • Feb 31, 2022</p>
                             </div>
                         </div>
                         <div class="card">
-                            <a href="./demo.html"><img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."></a>
+                            <a class="card_img_con" href="./demo.html"><img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."></a>
                             <div class="card-body">
                                 <h5><a href="./demo.html">Lorem ipsum dolor sit amet consectetur adipisicing.</a></h5>
                                 <p class="text-muted m-0">by <span><a href="./demo.html" class="clr_blue">You Know Who</a></span> • Feb 31, 2022</p>
                             </div>
                         </div>
                         <div class="card">
-                            <a href="./demo.html"><img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."></a>
+                            <a class="card_img_con" href="./demo.html"><img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."></a>
                             <div class="card-body">
                                 <h5><a href="./demo.html">Lorem ipsum dolor sit amet consectetur adipisicing.</a></h5>
                                 <p class="text-muted m-0">by <span><a href="./demo.html" class="clr_blue">You Know Who</a></span> • Feb 31, 2022</p>
@@ -287,11 +336,11 @@
                     <div class="lev_3_con">
                         <div class="card mb-3">
                             <div class="row g-0">
-                              <div class="col-md-4 lev_3_side_img rounded-2">
+                              <div class="col-12 col-md-4 lev_3_side_img rounded-2 card_img_con">
                                 <img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="img-fluid rounded-start" alt="...">
                               </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
+                              <div class="col-9 col-md-8">
+                                  <div class="card-body">
                                   <h5 class="card-title"><a href="./demo.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h5>
                                   <p class="card-text m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum veritatis, doloribus nam est et velit?</p>
                                   <p class="text-muted m-0">by <span><a href="./demo.html" class="clr_blue">You Know Who</a></span> • Feb 31, 2022</p>
@@ -301,11 +350,11 @@
                           </div>
                         <div class="card mb-3">
                             <div class="row g-0">
-                              <div class="col-md-4 lev_3_side_img rounded-2">
-                                <img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="img-fluid rounded-start" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
+                              <div class="col-12 col-md-4 lev_3_side_img rounded-2 card_img_con">
+                                  <img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="img-fluid rounded-start" alt="...">
+                                </div>
+                              <div class="col-9 col-md-8">
+                                  <div class="card-body">
                                   <h5 class="card-title"><a href="./demo.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h5>
                                   <p class="card-text m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum veritatis, doloribus nam est et velit?</p>
                                   <p class="text-muted m-0">by <span><a href="./demo.html" class="clr_blue">You Know Who</a></span> • Feb 31, 2022</p>
@@ -318,7 +367,7 @@
                 </div>
 
             </main>
-            <aside>
+            <aside class="col-12 col-lg-4">
                 <div class="aside_box rounded-2 my-3">
                     <div class="aside_box_head m-0">
                         <h5 class="m-0">Follow Us</h5>
@@ -346,10 +395,11 @@
                     <div class="aside_box_main aside_popular">
                         <div class="card">
                             <div class="row g-0">
-                              <div class="col-md-4 aside_box_img rounded-2">
+                              <!-- <div class="col-md-4 aside_box_img rounded-2"> -->
+                              <div class="col-3 col-md-4 aside_box_img rounded-2">
                                 <img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="img-fluid rounded-start" alt="...">
                               </div>
-                              <div class="col-md-8">
+                              <div class="col-8">
                                 <div class="card-body">
                                   <h6 class="card-title"><a href="./demo.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h6>
                                   <!-- <p class="card-text m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum veritatis, doloribus nam est et velit?</p> -->
@@ -360,10 +410,10 @@
                         </div>
                         <div class="card">
                             <div class="row g-0">
-                              <div class="col-md-4 aside_box_img rounded-2">
+                              <div class="col-3 col-md-4 aside_box_img rounded-2">
                                 <img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="img-fluid rounded-start" alt="...">
                               </div>
-                              <div class="col-md-8">
+                              <div class="col-8">
                                 <div class="card-body">
                                   <h6 class="card-title"><a href="./demo.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h6>
                                   <!-- <p class="card-text m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum veritatis, doloribus nam est et velit?</p> -->
@@ -381,28 +431,28 @@
                     </div>
                     <div class="aside_box_main aside_latest">
                         <div class="card">
-                            <a href="./demo.html"><img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."></a>
+                            <a class="card_img_con" href="./demo.html"><img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."></a>
                             <div class="card-body">
                                 <h6><a href="./demo.html">Lorem ipsum dolor sit amet consectetur adipisicing.</a></h6>
                                 <p class="text-muted m-0">by Feb 31, 2022</p>
                             </div>
                         </div>
                         <div class="card">
-                            <a href="./demo.html"><img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."></a>
+                            <a class="card_img_con" href="./demo.html"><img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."></a>
                             <div class="card-body">
                                 <h6><a href="./demo.html">Lorem ipsum dolor sit amet consectetur adipisicing.</a></h6>
                                 <p class="text-muted m-0">by Feb 31, 2022</p>
                             </div>
                         </div>
                         <div class="card">
-                            <a href="./demo.html"><img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."></a>
+                            <a class="card_img_con" href="./demo.html"><img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."></a>
                             <div class="card-body">
                                 <h6><a href="./demo.html">Lorem ipsum dolor sit amet consectetur adipisicing.</a></h6>
                                 <p class="text-muted m-0">by Feb 31, 2022</p>
                             </div>
                         </div>
                         <div class="card">
-                            <a href="./demo.html"><img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."></a>
+                            <a class="card_img_con" href="./demo.html"><img src="https://images.unsplash.com/photo-1566262258598-53deb7089bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NpJTIwZml8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."></a>
                             <div class="card-body">
                                 <h6><a href="./demo.html">Lorem ipsum dolor sit amet consectetur adipisicing.</a></h6>
                                 <p class="text-muted m-0">by Feb 31, 2022</p>
@@ -436,5 +486,6 @@
         </div>
     </section>
 <!-- BLOG MAIN BODY END -->
+    <script src="./js/main.js" defer></script>
 </body>
 </html>
